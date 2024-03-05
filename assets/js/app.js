@@ -9,10 +9,10 @@ let cross4 = document.querySelector(".cross-4");
 let cross5 = document.querySelector(".cross-5");
 let cross6 = document.querySelector(".cross-6");
 let menuicon = document.querySelector("#menuIcon");
-let Home = document.querySelector(".Home");
-let Market = document.querySelector(".Market");
+let How = document.querySelector(".How");
+let Brand = document.querySelector(".Brand");
 let About = document.querySelector(".About");
-let Next = document.querySelector(".Next");
+let Career = document.querySelector(".Career");
 let Token = document.querySelector(".Token");
 let myBtn = document.querySelector(".myBtn");
 
@@ -39,4 +39,26 @@ menuicon.addEventListener("click", function () {
     a.classList.toggle("fix-lft");
     flow.classList.toggle("flow-hidden");
   }
+});
+
+How.addEventListener("click", function () {
+  a.classList.toggle("fix-lft");
+  flow.classList.remove("flow-hidden");
+});
+Brand.addEventListener("click", function () {
+  a.classList.remove("fix-lft");
+  flow.classList.remove("flow-hidden");
+});
+About.addEventListener("click", function () {
+  a.classList.remove("fix-lft");
+  flow.classList.remove("flow-hidden");
+});
+
+Career.addEventListener("click", function () {
+  a.classList.remove("fix-lft");
+  flow.classList.remove("flow-hidden");
+});
+Token.addEventListener("click", function () {
+  a.classList.remove("fix-lft");
+  flow.classList.remove("flow-hidden");
 });

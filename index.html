@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <title>cloop</title>
+    <link rel="icon" href="./assets/images/sec-1-phn.png" />
+    <meta name="title" content="cloop" />
+    <meta
+      name="description"
+      content="Recycling Has Never Been This Easy and Rewarding"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="cloop" />
+    <meta
+      property="og:description"
+      content="Recycling Has Never Been This Easy and Rewarding"
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/1TLRFPj/Screenshot-66.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="cloop" />
+    <meta
+      property="twitter:description"
+      content="Recycling Has Never Been This Easy and Rewarding"
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/1TLRFPj/Screenshot-66.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="flow overflow_hidden">
+    <div>
+      <!-- preloader -->
+      <div
+        id="preloder"
+        class="min-vh-100 bg_blue d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 z_10"
+      >
+        <div
+          class="fw-semibold ff-rec text-white large1 d-flex align-items-center gap-4"
+        >
+          <div class="loader"></div>
+          <p class="mb-0 fs-80 fw-semibold text-white ff-outfit">Cloop</p>
+        </div>
+      </div>
+      <!-- backtotop -->
+      <button
+        onclick="topFunction()"
+        id="myBtn"
+        class="myBtn dflex align-items-center justify-content-center cursor-pointer"
+        title="Go to top"
+      >
+        <span class="border_r back_top"
+          ><svg
+            width="20"
+            height="20"
+            fill="#fff"
+            viewBox="0 0 16 16"
+            class="fill-white mb-1"
+          >
+            <path
+              d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+            ></path>
+            <path
+              d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            ></path>
+          </svg>
+        </span>
+      </button>
+      <!-- header -->
+      <div class="position-relative z-2">
+        <div class="overflow-hidden z-2">
+          <nav class="nav_bgg">
+            <div class="container px_3">
+              <div
+                class="py_13 d-flex justify-content-between align-items-center"
+              >
+                <img
+                  class="nav_logo pointer"
+                  src="./assets/images/nav_logo.png"
+                  alt="logo"
+                />
+                <label id="menuIcon" class="z_22">
+                  <span class="cross-4"></span>
+                  <span class="cross-5"></span>
+                  <span class="cross-6"></span>
+                </label>
+                <ul
+                  class="z_20 gap_36 min-h-screen nav-flip d-flex align-items-center justify-content-center list-unstyled gap_5 mb-0 ps-0"
+                  id="nav"
+                >
+                  <li>
+                    <a
+                      onClick="{Movement}"
+                      href="#how"
+                      class="fw-normal Home fs-16 ff-outfit nav_hv position-relative text-decoration-none text-white inline lh-17"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick="{Movement}"
+                      href="#brand"
+                      class="fw-normal Market fs-16 ff-outfit nav_hv position-relative text-decoration-none text-white inline lh-17"
+                    >
+                      For Brands
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick="{Movement}"
+                      href="#about"
+                      class="fw-normal About fs-16 ff-outfit nav_hv position-relative text-decoration-none text-white inline lh-17"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick="{Movement}"
+                      href="#careers"
+                      class="fw-normal Next fs-16 ff-outfit nav_hv position-relative text-decoration-none text-white inline lh-17"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="how" class="bg_blue position-relative min-vh-80 mt_1 pt_80">
+            <a href="#" class="top-star star_animate position-absolute"
+              ><svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M14.9039 2.13565C14.8028 0.534387 16.5336 -0.528168 17.9157 0.286686L45.1403 16.3372C45.485 16.5404 45.8827 16.6356 46.2821 16.6104L77.823 14.6178C79.4243 14.5167 80.4868 16.2474 79.672 17.6296L63.6214 44.8542C63.4182 45.1989 63.3231 45.5966 63.3483 45.996L65.3408 77.5369C65.442 79.1381 63.7112 80.2007 62.3291 79.3859L35.1045 63.3353C34.7598 63.1321 34.362 63.0369 33.9627 63.0622L2.42177 65.0547C0.820504 65.1559 -0.242051 63.4251 0.572803 62.043L16.6233 34.8184C16.8266 34.4737 16.9217 34.0759 16.8965 33.6765L14.9039 2.13565Z"
+                  fill="#D1D1D1"
+                />
+              </svg>
+            </a>
+            <div class="container">
+              <div
+                class="d-flex align-items-center justify-content-center row -mx-3"
+              >
+                <div class="col-md-6 px_3 z-3 position-relative">
+                  <div class="d-flex flex-column pt_80 mt-md-0 mt_60">
+                    <h1
+                      class="fw-semibold lh_100 text-center text-md-start fs-80 ff-outfit text-white"
+                    >
+                      Recycle. Reward.
+                    </h1>
+                    <h1
+                      class="fw-normal lh_83 text-center text-md-start fs-64 ff-rain text-white"
+                    >
+                      with cloop
+                    </h1>
+                  </div>
+
+                  <p
+                    class="fs-16 fw-normal text-center text-md-start text-white ff-outfit lh_24 mb_38 mw_448"
+                  >
+                    Get exclusive discounts and coupons from the hottest brands
+                    every time you recycle and track your environmental impact
+                    with the Cloopp App.
+                  </p>
+                  <div
+                    class="d-flex justify-content-center pb_81 justify-content-md-start align-items-center gap_16"
+                  >
+                    <img
+                      class="app_btn pointer"
+                      src="./assets/images/app_btn.png"
+                      alt="app_store"
+                    />
+                    <img
+                      class="app_btn pointer"
+                      src="./assets/images/play_btn.png"
+                      alt="play store"
+                    />
+                  </div>
+                  <a
+                    href="#"
+                    class="position-absolute right-0 teer teer_animate d-none d-md-block"
+                    ><svg
+                      width="131"
+                      height="83"
+                      viewBox="0 0 131 83"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M130.169 82.3585C130.169 82.0286 129.249 79.1251 128.131 75.8917C120.041 52.994 106.952 39.0046 91.2987 36.761C86.9578 36.1011 81.8934 36.2991 78.8022 37.1569C78.0129 37.3549 77.0263 36.4311 75.5794 34.0555C71.1069 26.7309 61.9647 19.5382 51.7044 15.1831C43.7461 11.8177 37.6952 10.4319 23.949 8.65028L20.6604 8.25435L24.7383 6.53867C28.8161 4.88898 29.8026 3.89916 29.1449 2.18348C28.4872 0.401817 26.9087 0.533793 21.7128 2.71139C18.8846 3.96515 13.1625 6.07676 9.08472 7.39651C4.94114 8.71626 1.19218 10.168 0.731781 10.6299C-0.715179 12.0816 0.53447 13.4014 5.59885 15.9749C8.36124 17.2947 12.176 19.7362 14.1491 21.3859C17.9638 24.4213 20.4631 24.9492 20.8578 22.7057C21.1866 21.1879 18.4242 18.2185 14.6095 15.7769C13.031 14.7871 11.7813 13.7313 11.7813 13.4014C11.7813 12.5435 26.8429 13.4014 33.3543 14.6552C49.2051 17.6906 62.6882 24.7513 69.923 33.9895C71.5673 36.0352 72.9485 37.9488 72.9485 38.1468C72.9485 38.4107 72.1593 38.8066 71.1727 39.0706C70.1861 39.2686 66.8318 40.7203 63.8063 42.172C51.5071 48.0449 45.3904 58.339 49.0078 66.9834C53.3487 77.4094 67.8841 79.2571 75.9082 70.2828C80.7753 64.9378 82.7484 57.7451 81.5645 49.9586C81.1699 47.451 80.578 44.6795 80.1833 43.6897C79.131 40.9842 79.2626 40.8523 83.2088 40.3244C91.1014 39.3345 101.164 42.7659 108.07 48.7708C114.516 54.3137 122.935 67.8412 126.881 78.8612C127.736 81.1707 128.788 82.9524 129.249 82.9524C129.775 82.9524 130.169 82.6884 130.169 82.3585ZM56.703 70.0188C53.4803 67.5773 52.2306 65.2677 52.2964 61.9023C52.3622 55.6335 57.6896 49.6286 67.2922 45.0095C74.1982 41.7101 74.9217 41.7101 76.1055 45.3394C76.6317 46.9891 77.0263 50.5524 77.0263 53.3239C77.0921 61.3084 73.6062 67.8412 68.0157 70.5467C64.6614 72.1304 59.2024 71.8665 56.703 70.0188Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-md-6 px_3">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      class="bottle_w pt_42 pt_45 pt-xl-0"
+                      src="./assets/images/hero_img.png"
+                      alt="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              class="w-100 position-absolute hero_btm"
+              src="./assets/images/hero_btmm.png"
+              alt="botm-sh"
+            />
+            <img
+              class="position-absolute z-0 hero_sh"
+              src="./assets/images/hero-sh.png"
+              alt="botm-sh"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- sec-1 -->
+      <div id="brand" class="position-relative mt_1 pt_40">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-center">
+            <h2
+              data-aos="zoom-in-up"
+              class="ff-outfit fw-semibold black-l mw_675 fs-52 lh_63 text-center mb-5 mt-3"
+            >
+              Creating a Greener World Is Now As Easy As 1-2-3
+            </h2>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-center row -mx-3"
+          >
+            <div class="col-md-6 px_3">
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  data-aos="zoom-in-up"
+                  class="d-flex phn_img align-items-center justify-content-center"
+                  src="./assets/images/sec-1-phn.png"
+                  alt="phone"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 px_3">
+              <p
+                data-aos="zoom-in-up"
+                class="nmbr_circle ff-outfit fw-semibold fs-32 lh_35 text-center opacity_1 light-yellow pb-0 mb_20 pt-md-1"
+              >
+                1
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-medium ff-outfit fs-24 lh_31 black-l mb-10"
+              >
+                Scan The Barcode Before Recycling
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-normal fs-16 ff-outfit lh_24 black-l mw_471 mb_24"
+              >
+                Open Cloopp, scan the product's barcode, and rack up points with
+                every item you keep out of the landfill.
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="nmbr_circle ff-outfit fw-semibold fs-32 lh_35 text-center opacity_1 light-yellow pb-0 mb_20 pt-md-1"
+              >
+                2
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-medium ff-outfit fs-24 lh_31 black-l mb-10"
+              >
+                Scan The Barcode Before Recycling
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-normal fs-16 ff-outfit lh_24 black-l mw_471 mb_24"
+              >
+                Open Cloopp, scan the product's barcode, and rack up points with
+                every item you keep out of the landfill.
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="nmbr_circle ff-outfit fw-semibold fs-32 lh_35 text-center opacity_1 light-yellow pb-0 mb_20 pt-md-1"
+              >
+                3
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-medium ff-outfit fs-24 lh_31 black-l mb-10"
+              >
+                Scan The Barcode Before Recycling
+              </p>
+              <p
+                data-aos="zoom-in-up"
+                class="fw-normal fs-16 ff-outfit lh_24 black-l mw_471 mb_24"
+              >
+                Open Cloopp, scan the product's barcode, and rack up points with
+                every item you keep out of the landfill.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="position-absolute phn_epp d-none d-md-block"
+          src="./assets/images/phn.png"
+          alt="phn-elp"
+        />
+      </div>
+    <!-- faq1 -->
+    <section class="s3-padding bg_blue position-relative pt_80 mt_1 z-0">
+      <img
+        class="w-100 position-absolute mt_1 top-0"
+        src="./assets/images/phone-btm.png"
+        alt="botm-sh"
+      />
+      <div class="container pt_80">
+        <div class="row align-items-center justify-content-between pt_80 pb_80">
+          <div class="col-lg-6 col-12">
+            <h2
+              class="ff-outfit fw-semibold fs-52 text-white lh_63 mw_610 mb_40 text-center mx-lg-0 text-lg-start mt_60"
+            >
+              Recycling Has Never Been This Easy and Rewarding
+            </h2>
+            <div class="accordion ac-padding accordion1" id="accordionExample">
+              <div class="accordion-item bg-transparent mb-4 mx-auto mx-lg-0">
+                <h2
+                  class="accordion-header bg-transparent d-flex align-items-center gap-3"
+                >
+                  <span
+                    ><svg
+                      class="icnn"
+                      viewBox="0 0 41 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1075_73)">
+                        <path
+                          d="M15.2711 1.50782C14.9842 1.60938 14.6097 1.78125 14.4264 1.89063C13.9084 2.21094 2.19309 12.8359 1.8504 13.2969C1.42004 13.875 1.03751 14.6875 0.846236 15.4297C0.686845 16.0469 0.686845 16.2422 0.702784 25.9375L0.726692 35.8203L0.909992 36.2734C1.33238 37.2969 2.32061 38.1953 3.36462 38.5156C3.88264 38.6719 4.04203 38.6719 16.5861 38.6719C28.8274 38.6719 29.2976 38.6641 29.7678 38.5234C30.9951 38.1484 31.9674 37.1484 32.3579 35.8672C32.4695 35.4844 32.4854 34.4453 32.4854 25.8438C32.4854 15.3984 32.5014 15.7109 32.0391 14.6016C31.7682 13.9531 31.2342 13.1484 30.756 12.6719C30.3018 12.2188 20.7223 3.57813 19.6943 2.6875C18.7379 1.85938 18.5387 1.73438 17.917 1.51563C17.1679 1.25782 16.0123 1.25782 15.2711 1.50782ZM17.407 7.99219C18.0924 8.66407 17.6062 9.84375 16.6419 9.84375C16.1398 9.84375 15.7812 9.61719 15.582 9.17969C15.3907 8.75 15.4385 8.39844 15.7334 8.05469C16.1876 7.53125 16.9049 7.50782 17.407 7.99219ZM12.0833 15.4844C14.5459 16.6563 15.0719 20.1719 13.0875 22.1406C11.6848 23.5469 9.6287 23.5781 8.18621 22.2266C7.35737 21.4531 6.90311 20.3672 6.90311 19.1797C6.90311 17.9922 7.35737 16.9063 8.18621 16.1328C9.28601 15.1016 10.7683 14.8594 12.0833 15.4844ZM20.1087 15.9375C20.4354 16.125 20.6347 16.5156 20.6267 16.9141C20.6187 17.1328 19.758 19.2188 17.67 24.1016C16.0442 27.875 14.6495 31.0625 14.5698 31.1719C14.4822 31.2813 14.251 31.4375 14.0518 31.5156C13.7011 31.6563 13.6772 31.6641 13.3186 31.5313C12.8643 31.3594 12.5615 30.9531 12.5615 30.5156C12.5615 30.1172 18.3713 16.4766 18.6901 16.1406C18.8017 16.0234 18.969 15.8906 19.0567 15.8594C19.3436 15.7422 19.8457 15.7734 20.1087 15.9375ZM24.0775 24.75C25.4722 25.3906 26.3568 26.8359 26.3568 28.4688C26.3568 30.1172 25.4722 31.5547 24.0616 32.2109C23.5515 32.4453 23.4639 32.4609 22.643 32.4609C21.8062 32.4609 21.7424 32.4453 21.2164 32.1953C20.1406 31.6797 19.3197 30.6172 19.0567 29.3984C18.3633 26.2188 21.32 23.4844 24.0775 24.75Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M9.92341 17.6016C9.23803 18.0547 8.99097 19.2969 9.42133 20.1406C9.70026 20.6875 10.0748 20.9375 10.6168 20.9375C11.4217 20.9375 12.0035 20.1953 12.0035 19.1719C12.0035 18.4922 11.7086 17.875 11.2225 17.5625C10.9037 17.3594 10.2661 17.375 9.92341 17.6016Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M21.9253 26.9688C21.4471 27.375 21.2877 27.7578 21.2877 28.4766C21.2877 29.1953 21.4471 29.5781 21.9253 29.9844C22.1644 30.1953 22.268 30.2344 22.6346 30.2344C23.2004 30.2344 23.5351 30.0156 23.822 29.4453C24.2604 28.5781 24.0213 27.3438 23.3279 26.8906C23.1287 26.7656 22.9374 26.7188 22.6346 26.7188C22.268 26.7188 22.1644 26.7578 21.9253 26.9688Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M23.2485 2.78906C23.2644 2.83594 25.3285 4.71094 27.823 6.96875C30.3254 9.21875 32.5171 11.2344 32.7083 11.4453C33.5372 12.3672 34.2225 13.6641 34.5812 14.9531C34.7485 15.5781 34.7485 15.6406 34.7724 23.8438C34.7964 29.5859 34.8282 32.1094 34.884 32.1094C34.9318 32.1094 36.0157 31.6719 37.2908 31.1328C39.8889 30.0469 40.2874 29.8047 40.8453 28.9844C41.3314 28.2656 41.5147 27.6016 41.4748 26.6641L41.443 25.8984L38.287 16.8984C36.5497 11.9531 35.0354 7.72656 34.9239 7.50781C34.3819 6.46094 33.1945 5.375 32.0389 4.875C31.7998 4.77344 29.7835 4.26562 27.56 3.75C25.3365 3.23438 23.4557 2.78906 23.368 2.76562C23.2883 2.74219 23.2325 2.75 23.2485 2.78906Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1075_73">
+                          <rect
+                            width="40"
+                            height="40"
+                            fill="white"
+                            transform="translate(0.687012)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <button
+                    class="accordion-button ff-outfit lh_31 fw-medium text-white fs-24 bg-transparent ps-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Exclusive Coupons & Rewards
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div
+                    class="accordion-body fs-16 fw-normal lh_24 ff-outfit text-white opacity-90 ac-para1 op_80"
+                  >
+                    Cloopp partners with amazing brands to bring you coupons and
+                    deals you simply can’t get anywhere else.
+                  </div>
+                </div>
+              </div>
+              <div id="about" class="">
+                <div class="accordion-item bg-transparent mx-auto mx-lg-0">
+                  <h2 class="accordion-header d-flex align-items-center gap-3">
+                    <span
+                      ><svg
+                        class="icnn"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.9683 2.87584C17.9917 4.4149 17.9917 4.43053 18.2027 4.75084C18.5855 5.32115 18.687 5.34459 20.7652 5.39146C22.6011 5.43053 22.6011 5.43053 22.9683 5.64928C24.3433 6.45396 24.2574 8.36803 22.812 9.07896C22.4761 9.24303 22.3042 9.26646 20.8433 9.30553C19.4995 9.34459 19.1714 9.38365 18.7964 9.51646C16.648 10.2899 15.5074 12.5243 16.1949 14.5868C16.437 15.3133 16.8277 15.9071 17.3433 16.3602C18.0152 16.954 18.9761 17.3446 19.7574 17.3446C20.3199 17.3446 20.9136 17.4852 21.4683 17.743C21.7808 17.8837 21.9839 17.9462 21.9995 17.8915C22.0152 17.8446 22.2417 17.4852 22.4995 17.0868C23.0699 16.2196 24.2417 15.0243 25.062 14.4774C26.8511 13.2821 28.6245 12.7352 30.7339 12.7352H31.773L31.9683 12.1258C32.2339 11.2899 32.8589 8.77428 32.9214 8.2899L32.9761 7.89146L32.5152 7.36803C29.1324 3.46959 24.4527 1.32896 19.3355 1.32896H17.937L17.9683 2.87584Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M15.9214 1.63327C12.5854 2.34421 9.69482 3.85984 7.29639 6.17234L6.52295 6.92234L6.83545 7.35202C7.60107 8.37546 7.85107 9.07859 7.96045 10.4692C8.04639 11.602 8.22607 12.2817 8.6167 12.9067C8.76514 13.1567 9.01514 13.563 9.16357 13.8051C9.51514 14.3755 9.73389 14.9692 9.88232 15.7192C10.0542 16.6489 9.9917 22.188 9.8042 22.852C9.58545 23.6098 9.26514 24.2114 8.48389 25.3598C7.41357 26.938 7.38232 27.0317 7.34326 29.3442L7.31201 31.2192L7.98389 31.7973C8.6792 32.3911 9.78076 33.2114 10.1558 33.4067C10.4058 33.5395 10.2104 33.8051 11.7808 31.1958C12.9839 29.188 13.1401 28.9848 13.7495 28.5942C14.4761 28.1176 14.9683 28.0239 16.5542 28.063C17.8901 28.0864 17.9214 28.0942 18.4214 28.3286C18.7026 28.4692 19.2651 28.8286 19.6714 29.1333C20.5776 29.813 20.9839 29.9692 21.9683 30.0473L22.7339 30.102L22.3823 29.4067C20.7886 26.227 20.3276 22.3676 21.2261 19.7036C21.3667 19.2895 21.3823 19.1801 21.2964 19.0786C21.1011 18.8442 20.5542 18.6801 19.7417 18.602C18.2026 18.4536 17.3354 18.0551 16.312 17.0317C15.7729 16.5005 15.5776 16.2348 15.312 15.7036C14.9136 14.8911 14.7495 14.2192 14.7495 13.3911C14.7495 11.3364 16.0308 9.3989 17.9683 8.5239C18.7729 8.15671 19.437 8.04734 20.8042 8.04734C22.1011 8.04734 22.4761 7.96921 22.6323 7.67234C22.7651 7.43015 22.7339 7.09421 22.562 6.87546L22.4136 6.68015L20.5933 6.64109C18.8276 6.60202 18.7573 6.59421 18.3354 6.3989C17.7183 6.10984 17.2964 5.69577 16.9995 5.09421L16.7417 4.57077L16.7183 3.03171C16.7026 2.18015 16.6636 1.48484 16.6401 1.49265C16.6089 1.49265 16.2886 1.55515 15.9214 1.63327Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M5.24951 8.53906C4.60889 9.42969 4.32764 9.89844 3.82764 10.8984C2.59326 13.375 2.01514 15.8359 2.01514 18.6719C2.01514 22 2.87451 25.0312 4.60889 27.8438C5.0542 28.5703 5.9292 29.7578 6.02295 29.7656C6.0542 29.7656 6.07764 29.3125 6.07764 28.7656C6.07764 27.0703 6.31982 26.375 7.5542 24.5234C8.73389 22.7734 8.69483 22.9531 8.69483 19.0625C8.69483 15.3438 8.69483 15.3438 7.85107 14.0234C7.04639 12.7656 6.82764 12.1094 6.71045 10.5703C6.66357 9.96094 6.58545 9.5 6.46826 9.20312C6.29639 8.73438 5.85889 8.03125 5.72607 7.99219C5.68701 7.98438 5.46826 8.22656 5.24951 8.53906Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M33.9059 9.72656C33.859 9.89844 33.7809 10.1953 33.734 10.3906C33.6872 10.5859 33.5075 11.2422 33.3278 11.8594C33.1559 12.4688 33.0231 12.9844 33.0387 12.9922C33.0544 13.0078 33.3356 13.0938 33.6559 13.1953C34.2887 13.3906 35.2809 13.8438 35.8356 14.1797L36.1715 14.3906L36.1169 14.1328C35.8903 13.0859 34.6637 10.2656 34.1715 9.64844L33.984 9.41406L33.9059 9.72656Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M29.0074 14.1406C26.0933 14.7734 23.7027 16.7422 22.6402 19.3984C22.1324 20.6719 22.0621 21.0625 22.0621 22.7734C22.0543 24.4297 22.1089 24.8516 22.5308 26.3047C23.523 29.7422 26.4761 34.3594 30.023 38.0234L30.6871 38.7109L31.3668 38.0078C35.0464 34.1719 37.8902 29.6797 38.8824 26.1406C39.2808 24.7344 39.3824 23.8906 39.3355 22.4687C39.2964 21.1016 39.1793 20.5078 38.7339 19.3984C37.7418 16.9141 35.4761 14.9453 32.8199 14.2422C31.7574 13.9609 30.0308 13.9141 29.0074 14.1406ZM32.1324 15.5391C34.773 16.0859 36.8824 18.0312 37.6871 20.6641C37.8824 21.3047 37.9058 21.4844 37.9058 22.6172C37.9136 23.9609 37.8511 24.3281 37.4293 25.375C37.1011 26.2031 36.6324 26.9297 35.9683 27.6328C34.9293 28.7422 33.5621 29.5156 32.1402 29.8047C31.3511 29.9609 30.023 29.9609 29.2339 29.8047C26.9293 29.3359 24.9136 27.6641 23.9605 25.4375C23.5464 24.4766 23.4605 23.9687 23.4683 22.6172C23.4683 21.4922 23.4918 21.2969 23.6793 20.6797C24.523 17.9375 26.7652 15.9297 29.4996 15.4687C30.1871 15.3594 31.398 15.3906 32.1324 15.5391Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M29.398 16.7734C28.2261 17.0234 27.2339 17.5781 26.3511 18.4766C25.2183 19.6328 24.6714 21 24.6714 22.6562C24.6714 26.0391 27.2964 28.6719 30.6636 28.6719C31.7417 28.6719 32.4292 28.5078 33.4136 28.0312C34.1167 27.6875 34.3276 27.5312 34.898 26.9609C35.8355 26.0234 36.3355 25.1172 36.6011 23.8828C36.7808 23.0234 36.7105 21.625 36.437 20.8203C35.8667 19.125 34.6245 17.7656 33.0386 17.1016C31.9683 16.6562 30.5464 16.5234 29.398 16.7734Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M14.984 29.3672C14.234 29.6016 13.9996 29.8672 12.7418 31.9844C12.1559 32.9766 11.6246 33.8672 11.5699 33.9609C11.4606 34.125 11.4762 34.1406 11.8434 34.3281C13.0465 34.9375 14.8199 35.5 16.4371 35.7969C17.3121 35.9531 17.7028 35.9766 19.359 35.9766C21.0231 35.9766 21.4059 35.9531 22.2887 35.7891C23.2887 35.6094 24.8199 35.2031 25.3981 34.9609L25.6949 34.8359L25.3668 34.3906C25.1871 34.1484 24.7496 33.5 24.3903 32.9531C24.0309 32.4141 23.6481 31.8906 23.5309 31.8047C23.2028 31.5469 22.5621 31.3516 21.8434 31.2969C20.6324 31.2031 20.0934 30.9766 18.8199 30.0469C18.3824 29.7188 17.8903 29.4219 17.7262 29.375C17.4059 29.2891 15.2809 29.2812 14.984 29.3672Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <button
+                      class="accordion-button collapsed ff-outfit lh_31 fw-medium text-white fs-24 bg-transparent ps-1"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Track Your Environmental Impact
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div
+                      class="accordion-body fs-16 fw-normal lh_24 ff-outfit text-white opacity-90 ac-para1 op_80"
+                    >
+                      Cloopp partners with amazing brands to bring you coupons
+                      and deals you simply can’t get anywhere else.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="accordion-item bg-transparent mb-4 mb-lg-0 mx-auto mx-lg-0"
+                >
+                  <h2 class="accordion-header d-flex align-items-center gap-3">
+                    <span>
+                      <svg
+                        class="icnn"
+                        viewBox="0 0 41 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M30.9995 37.8335C30.8589 37.7476 30.6792 37.5679 30.5933 37.4272C30.437 37.1772 30.437 37.0132 30.437 27.3647C30.437 17.7163 30.437 17.5522 30.5933 17.3022C30.6792 17.1616 30.8589 16.9819 30.9995 16.896C31.2495 16.7476 31.4058 16.7397 34.812 16.7397C38.2183 16.7397 38.3745 16.7476 38.6245 16.896C38.7651 16.9819 38.9448 17.1616 39.0308 17.3022C39.187 17.5522 39.187 17.7163 39.187 27.3647C39.187 37.0132 39.187 37.1772 39.0308 37.4272C38.9448 37.5679 38.7651 37.7476 38.6245 37.8335C38.3745 37.9819 38.2183 37.9897 34.812 37.9897C31.4058 37.9897 31.2495 37.9819 30.9995 37.8335Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M6.74951 36.5914C5.6167 36.2242 4.64795 35.232 4.31201 34.0914C4.1167 33.4352 4.14795 32.3727 4.37451 31.7086L4.56201 31.1617L4.14795 30.7867C3.3042 30.0133 2.93701 29.1617 2.93701 27.9664C2.93701 27.4195 2.98389 27.1148 3.12451 26.7086L3.31201 26.1617L2.89795 25.7867C2.06201 25.0211 1.68701 24.1617 1.68701 22.982C1.68701 21.8258 2.06982 20.9508 2.89795 20.193L3.31201 19.818L3.12451 19.2711C2.89795 18.607 2.8667 17.5445 3.06201 16.8883C3.39795 15.732 4.37451 14.7477 5.52295 14.3883C5.96826 14.2477 6.31201 14.2398 11.2964 14.2398H16.5933L16.6323 10.7477C16.6636 6.86484 16.6714 6.80234 17.2026 5.79453C18.0464 4.19297 20.0776 3.10703 22.4292 3.01328C23.2808 2.98203 23.3901 2.99765 23.6245 3.13828C23.7651 3.23203 23.9448 3.41172 24.0386 3.55234C24.187 3.79453 24.1948 3.88828 24.1558 4.86484C24.1245 5.44297 24.0698 6.39609 24.0308 6.97422C23.937 8.4039 23.937 11.3492 24.0386 11.9664C24.1714 12.818 24.8511 14.0758 26.6245 16.7945C27.3823 17.9508 27.4136 17.9898 27.6714 17.9898H27.937V26.8102V35.6305L26.9526 35.9898C26.4136 36.1852 25.6714 36.4352 25.2964 36.5445L24.6245 36.7398L15.9058 36.732C7.6792 36.732 7.17139 36.7242 6.74951 36.5914Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <button
+                      class="accordion-button collapsed ff-outfit lh_31 fw-medium text-white fs-24 bg-transparent ps-1"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Feel Good
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div
+                      class="accordion-body fs-16 fw-normal lh_24 ff-outfit text-white opacity-90 ac-para1 op_80"
+                    >
+                      Cloopp partners with amazing brands to bring you coupons
+                      and deals you simply can’t get anywhere else.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 px_3 position-relative">
+            <span class="icon_circle position-absolute"></span>
+            <span class="icon_circle2 position-absolute"></span>
+            <span
+              class="icon_circle3 d-none d-lg-block position-absolute"
+            ></span>
+            <span
+              class="icon_circle4 d-none d-lg-block position-absolute"
+            ></span>
+            <div
+              class="phn_crrd d-none d-xl-block zoom-in d-flex align-items-center position-absolute flex-column"
+            >
+              <button class="scan_btn fs-12 ff-inter fw-normal text-white mb-2">
+                Scan This Code
+              </button>
+              <img class="scan" src="./assets/images/scaner.png" alt="scaner" />
+            </div>
+            <img
+              class="w-100 d-none d-xl-block"
+              src="./assets/images/faq_1-img.png"
+              alt="faq-img"
+            />
+            <img
+              class="w-100 d-block d-xl-none"
+              src="./assets/images/faq_2.png"
+              alt="faq-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq2 -->
+    <div id="careers" class="bg-color position-relative pb_100 pt_40 pb_30">
+      <div class="container position-relative pt_80">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <p
+              class="fs-52 fw-semibold black-l flip-1 text-center pt_40 mb_40 lh_63 mt_60"
+            >
+              Frequently Asked Questions
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div data-aos="zoom-in-up" class="accordion-item p_16_20">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <span class="fs-24 fw-medium ff-outfit lh_31 black-l"
+                      >What products can I scan?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse bg-color collapse show"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div
+                    class="accordion-body fs-16 fw-normal ff-outfit lh_24 gray2 mw_758"
+                  >
+                    You can scan any product with a barcode before you recycle,
+                    no matter what it’s made of. Cloopp rewards you for your
+                    positive actions!
+                  </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-color"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsetwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapsetwo"
+                  >
+                    <span class="fs-24 fw-medium ff-outfit lh_31 black-l"
+                      >Where can I use my rewards?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapsetwo"
+                  class="accordion-collapse collapse bg-color"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div
+                    class="accordion-body fs-16 fw-normal ff-outfit lh_24 gray2 mw_758"
+                  >
+                    You can scan any product with a barcode before you recycle,
+                    no matter what it’s made of. Cloopp rewards you for your
+                    positive actions!
+                  </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsethree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapsethree"
+                  >
+                    <span class="fs-24 fw-medium ff-outfit lh_31 black-l"
+                      >What kind of impact can I make?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapsethree"
+                  class="accordion-collapse collapse bg-color"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div
+                    class="accordion-body fs-16 fw-normal ff-outfit lh_24 gray2 mw_758"
+                  >
+                    Hac varius turpis sit pulvinar lorem magna velit sit.
+                    Dapibus mattis adipiscing ornare arcu vitae enim. Proin
+                    turpis enim egestas sed in accumsan, feugiat neque turpis.
+                    Fringilla dui donec nullam faucibus vitae non, integer. Non.
+                  </div>
+                </div>
+              </div>
+              <div data-aos="zoom-in-up" class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapsefour"
+                  >
+                    <span class="fs-24 fw-medium ff-outfit lh_31 black-l"
+                      >Which brands do you partner with?</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapsefour"
+                  class="accordion-collapse collapse bg-color"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div
+                    class="accordion-body fs-16 fw-normal ff-outfit lh_24 gray2 mw_758"
+                  >
+                    Hac varius turpis sit pulvinar lorem magna velit sit.
+                    Dapibus mattis adipiscing ornare arcu vitae enim. Proin
+                    turpis enim egestas sed in accumsan, feugiat neque turpis.
+                    Fringilla dui donec nullam faucibus vitae non, integer. Non.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="top_10 position-absolute w-100"
+        src="./assets/images/faq-top.png"
+        alt="faq_elp"
+      />
+      <img
+        class="faq_epp d-none d-md-block position-absolute right-0"
+        src="./assets/images/faq_elpp.png"
+        alt="faq_elp"
+      />
+    </div>
+
+    <!-- news -->
+    <div id="policy" class="bg_blue min_h_700 z1 position-relative">
+      <div
+        class="d-flex z-3 flex-column align-items-center justify-content-center min_h_700 px_3"
+      >
+        <h2
+          data-aos="zoom-in-up"
+          class="fw-semibold ff-outfit fs-52 lh_63 text-center text-white"
+        >
+          Subscribe Newsletter
+        </h2>
+        <p
+          data-aos="zoom-in-up"
+          class="fw-normal fs-16 ff-outfit text-white op_80 text-center lh_24 mb_40"
+        >
+          Subscribe to our newsletter for the latest news, offers, and eco-tips.
+        </p>
+        <div class="position-relative">
+          <input
+            data-aos="zoom-in-up"
+            type="text"
+            placeholder="Enter your email"
+            class="mail mw_503"
+          />
+          <button
+            data-aos="zoom-in-up"
+            class="fs-16 fw-semibold ff-outfit sky bg-white lh_24 mail_btn position-absolute"
+          >
+            Join
+          </button>
+        </div>
+      </div>
+      <img
+        class="position-absolute news_1 z-0 d-none d-md-block left-0"
+        src="./assets/images/news-ep-1.png"
+        alt="sec-1-elp"
+      />
+      <img
+        class="position-absolute news_2 z-0 d-none d-md-block right-0"
+        src="./assets/images/news-ep-2.png"
+        alt="sec-1-elp"
+      />
+      <img
+        class="ft_top position-absolute w-100"
+        src="./assets/images/ft-sh.png"
+        alt="sec-1-elp"
+      />
+
+      <img
+        class="top_10 position-absolute w-100"
+        src="./assets/images/phone-btm.png"
+        alt="sec-1-elp"
+      />
+    </div>
+    <!-- footer -->
+    <div class="bg-black mt_1">
+      <div class="container pt-5">
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-lg-between row pb_80 pb_md_41 -mx-3"
+        >
+          <div class="col-lg-4 col-12 px_3">
+            <div>
+              <img
+                class="mb-3 pointer"
+                src="./assets/images/ft_logo.png"
+                alt="ft_logo"
+              />
+              <p
+                class="fs-16 fw-normal ff-outfit op_80 lh_24 text-white mb_25 mw_345"
+              >
+                Cloopp revolutionizes recycling for everyone. Join, earn, and
+                support sustainability.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 px_3">
+            <div class="d-flex flex-md-row flex-wrap py-6 md:pt-0 -mx-3">
+              <div
+                class="col-sm-4 col-6 px_3 d-flex align-items- pt-lg-4 flex-column"
+              >
+                <ul class="ps-0 mb-0">
+                  <li class="mb_12">
+                    <a
+                      href="#for"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#brand"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a
+                      href="#about"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      For Brands
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="#careers"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-6 px_3 d-flex pt-lg-4 flex-column">
+                <ul class="ps_ul mb-0 flex-column d-flex">
+                  <li class="mb_12">
+                    <a
+                      href="#"
+                      class="fw-normal fs-16 ff-outfit text-nowrap text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li class="mb_12">
+                    <a
+                      href="#policy"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-sm-4 col-6 px_3 d-flex align-items- pt-lg-4 flex-column"
+              >
+                <ul class="ps_ul mb-0 flex-column d-flex pt_21 pt-sm-0">
+                  <li class="mb_12">
+                    <a
+                      href="#"
+                      class="fw-normal fs-16 ff-outfit text-decoration-none text-white d_400 ft_hv lh_17 op_80 mb-2"
+                    >
+                      Follow Us
+                    </a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center gap_10">
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="icon_card app-icon d-flex align-items-center justify-content-center"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.37234 0.334011C7.85883 0.332144 8.34532 0.337034 8.83168 0.348678L8.96101 0.353345C9.11034 0.358678 9.25768 0.365345 9.43568 0.373345C10.145 0.406678 10.629 0.518678 11.0537 0.683345C11.4937 0.852678 11.8643 1.08201 12.235 1.45268C12.5739 1.78575 12.8362 2.18864 13.0037 2.63334C13.1683 3.05801 13.2803 3.54268 13.3137 4.25201C13.3217 4.42934 13.3283 4.57734 13.3337 4.72668L13.3377 4.85601C13.3495 5.34214 13.3546 5.82841 13.353 6.31468L13.3537 6.81201V7.68534C13.3553 8.17184 13.3502 8.65833 13.3383 9.14468L13.3343 9.27401C13.329 9.42334 13.3223 9.57068 13.3143 9.74868C13.281 10.458 13.1677 10.942 13.0037 11.3667C12.8368 11.8119 12.5744 12.2151 12.235 12.548C11.9017 12.8869 11.4985 13.1492 11.0537 13.3167C10.629 13.4813 10.145 13.5933 9.43568 13.6267C9.25768 13.6347 9.11034 13.6413 8.96101 13.6467L8.83168 13.6507C8.34533 13.6625 7.85884 13.6676 7.37234 13.666L6.87501 13.6667H6.00234C5.51585 13.6683 5.02936 13.6632 4.54301 13.6513L4.41368 13.6473C4.25542 13.6416 4.09719 13.6349 3.93901 13.6273C3.22968 13.594 2.74568 13.4807 2.32034 13.3167C1.87547 13.1496 1.4725 12.8872 1.13968 12.548C0.800373 12.2149 0.537826 11.8117 0.370343 11.3667C0.205677 10.942 0.0936765 10.458 0.0603431 9.74868C0.0529184 9.59049 0.0462517 9.43226 0.0403431 9.27401L0.0370099 9.14468C0.024719 8.65833 0.0191628 8.17184 0.0203432 7.68534V6.31468C0.0184825 5.82841 0.0233719 5.34214 0.0350099 4.85601L0.0396765 4.72668C0.0450099 4.57734 0.0516765 4.42934 0.0596765 4.25201C0.0930098 3.54201 0.20501 3.05868 0.369676 2.63334C0.537258 2.18842 0.800319 1.78564 1.14034 1.45334C1.47294 1.11385 1.87565 0.85106 2.32034 0.683345C2.74568 0.518678 3.22901 0.406678 3.93901 0.373345L4.41368 0.353345L4.54301 0.350011C5.02913 0.337727 5.5154 0.33217 6.00168 0.333345L7.37234 0.334011ZM6.68701 3.66734C6.24535 3.6611 5.80685 3.74269 5.39699 3.90739C4.98714 4.07209 4.61411 4.3166 4.29957 4.62671C3.98504 4.93683 3.73528 5.30637 3.5648 5.71385C3.39433 6.12134 3.30654 6.55864 3.30654 7.00034C3.30654 7.44205 3.39433 7.87935 3.5648 8.28684C3.73528 8.69432 3.98504 9.06386 4.29957 9.37397C4.61411 9.68409 4.98714 9.9286 5.39699 10.0933C5.80685 10.258 6.24535 10.3396 6.68701 10.3333C7.57106 10.3333 8.41891 9.98215 9.04403 9.35703C9.66915 8.73191 10.0203 7.88407 10.0203 7.00001C10.0203 6.11596 9.66915 5.26811 9.04403 4.64299C8.41891 4.01787 7.57106 3.66734 6.68701 3.66734ZM6.68701 5.00068C6.95268 4.99578 7.21666 5.04388 7.46354 5.14215C7.71042 5.24042 7.93523 5.38691 8.12486 5.57304C8.31449 5.75918 8.46513 5.98123 8.56797 6.22624C8.67082 6.47124 8.72381 6.73429 8.72386 7C8.7239 7.26572 8.67099 7.52878 8.56823 7.77382C8.46547 8.01886 8.3149 8.24097 8.12534 8.42717C7.93577 8.61337 7.711 8.75992 7.46416 8.85828C7.21732 8.95664 6.95335 9.00482 6.68768 9.00001C6.15724 9.00001 5.64854 8.7893 5.27346 8.41422C4.89839 8.03915 4.68768 7.53044 4.68768 7.00001C4.68768 6.46958 4.89839 5.96087 5.27346 5.5858C5.64854 5.21072 6.15724 5.00001 6.68768 5.00001L6.68701 5.00068ZM10.187 2.66734C9.97194 2.67595 9.76854 2.76744 9.61941 2.92266C9.47029 3.07787 9.387 3.28477 9.387 3.50001C9.387 3.71525 9.47029 3.92215 9.61941 4.07736C9.76854 4.23258 9.97194 4.32407 10.187 4.33268C10.408 4.33268 10.62 4.24488 10.7763 4.0886C10.9325 3.93232 11.0203 3.72036 11.0203 3.49934C11.0203 3.27833 10.9325 3.06637 10.7763 2.91009C10.62 2.75381 10.408 2.66601 10.187 2.66601V2.66734Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="icon_card app-icon d-flex align-items-center justify-content-center"
+                    ><svg
+                      width="8"
+                      height="14"
+                      viewBox="0 0 8 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.81852 13.3332H4.48519V7.99317H6.88786L7.15186 5.33984H4.48519V3.99984C4.48519 3.82303 4.55543 3.65346 4.68045 3.52843C4.80548 3.40341 4.97505 3.33317 5.15186 3.33317H7.15186V0.666504H5.15186C4.2678 0.666504 3.41996 1.01769 2.79484 1.64281C2.16971 2.26794 1.81852 3.11578 1.81852 3.99984V5.33984H0.485191L0.221191 7.99317H1.81852V13.3332Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://twitter.com/login"
+                    target="_blank"
+                    class="icon_card app-icon d-flex align-items-center justify-content-center"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.687282 0.997754C0.697438 1.01299 1.81209 2.63799 3.16541 4.60576C4.51619 6.57354 5.62322 8.18838 5.62322 8.19346C5.62322 8.19854 1.05545 13.5179 0.702516 13.9216C0.66697 13.9647 0.694899 13.9673 1.24588 13.9673H1.82986L3.98806 11.4562L6.14881 8.94756L7.87283 11.4562L9.59685 13.9673H11.5088C13.0322 13.9673 13.4181 13.9597 13.4004 13.9343C13.3902 13.919 12.2426 12.2433 10.8486 10.2146C9.45213 8.18584 8.30701 6.5126 8.29939 6.49482C8.28924 6.46436 8.90623 5.74072 12.1664 1.9499L13.0144 0.967285H12.4304H11.8465L9.8076 3.33877C8.68533 4.64131 7.76111 5.70518 7.75349 5.7001C7.74588 5.69756 7.00955 4.62861 6.1158 3.33115L4.49334 0.967285H2.58142C1.10623 0.967285 0.674587 0.974903 0.687282 0.997754ZM7.79412 7.35811C9.91677 10.3974 11.6967 12.944 11.75 13.0202L11.8465 13.1548H11.001L10.1554 13.1522L6.29607 7.62979C4.17341 4.59053 2.39353 2.04385 2.34021 1.96768L2.24119 1.83057H3.08924L3.93474 1.83311L7.79412 7.35811Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://shareme.to/account/login"
+                    target="_blank"
+                    class="icon_card app-icon d-flex align-items-center justify-content-center"
+                    ><svg
+                      width="15"
+                      height="12"
+                      viewBox="0 0 15 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.6465 1.08151L12.534 11.044C12.3745 11.747 11.959 11.922 11.3685 11.591L8.14952 9.21901L6.59652 10.713C6.42452 10.885 6.28102 11.0285 5.94952 11.0285L6.18102 7.75051L12.1465 2.36001C12.406 2.12901 12.09 2.00051 11.7435 2.23201L4.36852 6.87601L1.19352 5.88201C0.503015 5.66651 0.490515 5.19151 1.33752 4.86001L13.756 0.075512C14.331 -0.139988 14.834 0.203012 14.6465 1.08151Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-100 h- my-0 white2" />
+      <p
+        class="fs-14 ff-outfit text-white mb-0 py_14 op_80 fw-normal text-center"
+      >
+        © 2024 Cloopp
+      </p>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

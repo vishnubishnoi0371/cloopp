@@ -34,32 +34,48 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
 menuicon.addEventListener("click", function () {
-  if (a.classList !== document.querySelector("fix-lft")) {
-    a.classList.toggle("fix-lft");
-    flow.classList.toggle("flow-hidden");
-  }
+  if(a.classList !== document.querySelector("fix-lft")){
+  a.classList.toggle("fix-lft");
+  flow.classList.toggle("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3")}
 });
-
-
 How.addEventListener("click", function () {
   a.classList.toggle("fix-lft");
   flow.classList.remove("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3");
 });
 Brand.addEventListener("click", function () {
   a.classList.remove("fix-lft");
   flow.classList.remove("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3");
 });
 About.addEventListener("click", function () {
   a.classList.remove("fix-lft");
   flow.classList.remove("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3");
 });
 
 Career.addEventListener("click", function () {
   a.classList.remove("fix-lft");
   flow.classList.remove("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3");
 });
 Token.addEventListener("click", function () {
   a.classList.remove("fix-lft");
   flow.classList.remove("flow-hidden");
+  cross4.classList.toggle("cross-1");
+  cross5.classList.toggle("cross-2");
+  cross6.classList.toggle("cross-3");
 });

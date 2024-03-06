@@ -13,7 +13,6 @@
 
   /* color */
   --sky: #0073b1;
-  --gray: #b3b5b6;
   --gray2: #3d3d3d;
   --white2: #fcfcfc;
   --light-yellow: #f8b762;
@@ -39,9 +38,7 @@
 .sky {
   color: var(--sky);
 }
-.gray {
-  color: var(--gray);
-}
+
 .white2 {
   color: var(--white2);
 }
@@ -54,9 +51,7 @@
 .black-l {
   color: var(--black-l);
 }
-.pink {
-  color: var(--pink);
-}
+
 /* font-size */
 .fs-12 {
   font-size: var(--fs-12);

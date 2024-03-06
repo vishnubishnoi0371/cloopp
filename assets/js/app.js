@@ -2,7 +2,7 @@ const preloader = document.getElementById("preloader");
 setTimeout(() => {
   document.getElementById("preloder").classList.add("d-none");
   document.body.classList.remove("overflow_hidden");
-}, 4000);
+}, 2);
 let a = document.getElementById("nav");
 let flow = document.querySelector(".flow");
 let cross4 = document.querySelector(".cross-4");
@@ -34,14 +34,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
 menuicon.addEventListener("click", function () {
-  if(a.classList !== document.querySelector("fix-lft")){
-  a.classList.toggle("fix-lft");
-  flow.classList.toggle("flow-hidden");
-  cross4.classList.toggle("cross-1");
-  cross5.classList.toggle("cross-2");
-  cross6.classList.toggle("cross-3")}
+  if (a.classList !== document.querySelector("fix-lft")) {
+    a.classList.toggle("fix-lft");
+    flow.classList.toggle("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+  }
 });
 How.addEventListener("click", function () {
   a.classList.toggle("fix-lft");

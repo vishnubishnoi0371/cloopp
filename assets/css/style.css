@@ -15,10 +15,6 @@
 .ff-outfit {
   font-family: "Outfit", sans-serif;
 }
-.px_3 {
-  padding-left: 12px;
-  padding-right: 12px;
-}
 .nav_bgg {
   background: #0576b3 !important;
 }
@@ -51,12 +47,10 @@
 .mw_616 {
   max-width: 616px;
 }
-
 .mw_471 {
   max-width: 471px;
 }
 /* padding */
-
 .mt_1 {
   margin-top: -3px;
 }
@@ -88,9 +82,6 @@
 .lh_17 {
   line-height: 17.6px;
 }
-.lh_63 {
-  line-height: 63px;
-}
 
 .opacity_1 {
   opacity: 1 !important;
@@ -98,26 +89,26 @@
 /* nav */
 .cross-1 {
   rotate: 45deg;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .cross-2 {
   position: relative;
-  transition: .4s;
+  transition: 0.4s;
   top: -80%;
   rotate: -45deg;
 }
 
 .cross-4 {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .cross-5 {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .cross-6 {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .cross-3 {
@@ -177,7 +168,6 @@ nav ul li a:hover::before {
     position: fixed !important;
     opacity: 1;
     width: 100%;
-    /* max-width: 400px; */
     height: 100%;
     background: #0576b3;
     box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.1);
@@ -187,13 +177,6 @@ nav ul li a:hover::before {
   .fix-lft {
     left: 0;
   }
-}
-/* hero */
-.bg-hero {
-  background-image: url("../images/hero_bg.png") !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
-  background-position: left;
 }
 .app_btn {
   width: 150px;
@@ -221,12 +204,6 @@ nav ul li a:hover::before {
   max-width: 100%;
 }
 /* news */
-.bg-news {
-  background-image: url("../images/news-bg.png") !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
-  background-position: left;
-}
 
 input {
   outline: unset !important;
@@ -241,7 +218,6 @@ input {
   color: white !important;
   width: 303px;
   max-width: 100%;
-
   background: transparent;
 }
 .mail_btn {
@@ -286,7 +262,6 @@ input {
   top: -3%;
 }
 /* faq2 */
-
 .mb_40 {
   margin-bottom: 40px;
 }
@@ -312,7 +287,6 @@ input {
   --bs-accordion-active-bg: none !important;
   --bs-accordion-active-padding-bottom: 7px !important;
 }
-
 .accordion-body {
   padding: 0 !important;
   color: var(--gray2) !important;
@@ -409,7 +383,7 @@ ul {
   top: 20%;
 }
 .top-star {
-  top: 10%;
+  top: 3%;
   left: 11%;
 }
 .teer {
@@ -485,7 +459,6 @@ ul {
 .scan {
   width: 127px;
   height: 71px;
-  /* max-width: ; */
 }
 
 .app-icon {
@@ -536,53 +509,37 @@ ul {
 
   transition: all 500ms linear;
 }
-.icon_circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 55px;
+.icon_duration {
+  animation: rotate 4s linear infinite;
+}
+
+.icon_circle1 {
   right: 28%;
   top: -6%;
-  background-color: #63939e;
-  border-radius: 50%;
-  animation: rotate 2s linear infinite;
+}
+.hand_elp {
+  height: 100px;
+  width: 100px;
+  bottom: -4% !important;
+  right: -1%;
+}
+.opacity_90 {
+  opacity: 90%;
+}
+.mt_92 {
+  margin-top: 92px;
 }
 .icon_circle2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 25px;
   right: 63%;
   bottom: 11%;
-  background-color: #63939e;
-  border-radius: 50%;
-  animation: rotate 2s linear infinite;
 }
 .icon_circle3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 55px;
   right: 8%;
   bottom: 29%;
-  background-color: #4a9ecc;
-  border-radius: 50%;
-  animation: rotate 2s linear infinite;
 }
 .icon_circle4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 65px;
-  left: -4%;
-  bottom: 48%;
-  background-color: #4a9ecc;
-  border-radius: 50%;
-  animation: rotate 2s linear infinite;
+  left: 1%;
+  bottom: 28%;
 }
 .bottle_w {
   max-width: 100%;
@@ -640,7 +597,7 @@ ul {
     max-width: 100%;
   }
   .bottle_w {
-    max-width: 100%;
+    max-width: 90%;
   }
   .app_btn {
     width: 180px;
@@ -664,6 +621,22 @@ ul {
   }
 }
 @media (min-width: 768px) {
+  .hand_elp {
+    height: 170px;
+    width: 170px;
+    bottom: -1% !important;
+    right: 0%;
+  }
+  .icon_circle4 {
+    left: -4%;
+    bottom: 48%;
+  }
+  .lh_63 {
+    line-height: 63px;
+  }
+  .pt_44 {
+    padding-top: 44px;
+  }
   .myBtn {
     width: 50px;
 
@@ -693,6 +666,12 @@ ul {
   }
 }
 @media (min-width: 992px) {
+  .hand_elp {
+    height: 210px;
+    width: 210px;
+    bottom: -30% !important;
+    right: -15%;
+  }
   .pt_80 {
     padding-top: 80px;
   }
@@ -706,6 +685,12 @@ ul {
   }
 }
 @media (min-width: 1024px) {
+  .hand_elp {
+    height: 210px;
+    width: 210px;
+    bottom: -12% !important;
+    right: -15%;
+  }
   .top_10 {
     top: -10%;
   }

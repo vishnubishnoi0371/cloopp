@@ -41,9 +41,7 @@
 .mw_448 {
   max-width: 448px;
 }
-.mw_675 {
-  max-width: 675px;
-}
+
 .mw_616 {
   max-width: 616px;
 }
@@ -223,14 +221,33 @@ input {
 .mail_btn {
   padding: 16px 32px;
   border-radius: 10px;
-  border: 2px solid white;
+  border: 3px solid white;
   top: 0.9%;
   right: 0;
   transition: all 500ms linear;
 }
+.king_img {
+  width: 30px;
+  height: 30px;
+  background: #f8b762;
+}
+
+.detergent_btn:hover .img1 {
+  transform: translateY(-50%);
+}
+.detergent_btn:hover .img2 {
+  transform: translateY(50%);
+}
+.detergent_btn {
+  background: #f8b762;
+  border-radius: 8px;
+  transition: all 5s linear;
+  border: 1px solid transparent;
+  padding: 8px;
+}
 .mail_btn:hover {
   color: #ffffff;
-  border: 1.3px solid white;
+  border: 3px solid white;
   background: transparent !important;
 }
 /* faq-1 */
@@ -255,9 +272,6 @@ input {
   background-image: url(../images/minus.webp) !important;
 }
 
-.mw_610 {
-  max-width: 610px;
-}
 .top_10 {
   top: -3%;
 }
@@ -424,7 +438,7 @@ ul {
 }
 
 .star_animate {
-  animation: rotate 4s linear infinite;
+  animation: rotate 5s linear infinite;
 }
 
 .mt_60 {
@@ -455,6 +469,12 @@ ul {
   background: #0a567a;
   border: 1px solid transparent;
   border-radius: 10px;
+  transition: all 400ms linear;
+}
+.scan_btn:hover {
+  color: #0a567a !important;
+  border: 1.3px solid #0a567a;
+  background: transparent !important;
 }
 .scan {
   width: 127px;
@@ -544,8 +564,10 @@ ul {
 .bottle_w {
   max-width: 100%;
 }
+.zoom-in1 {
+  animation: zoomIn1 5s ease-in-out infinite;
+}
 /* keyframe */
-
 @keyframes spin89345 {
   0% {
     transform: rotate(0deg);
@@ -572,6 +594,17 @@ ul {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes zoomIn1 {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }
 @keyframes zoomIn {
@@ -666,6 +699,13 @@ ul {
   }
 }
 @media (min-width: 992px) {
+  .det_card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    bottom: 14%;
+    left: 9%;
+  }
   .hand_elp {
     height: 210px;
     width: 210px;
@@ -707,5 +747,9 @@ ul {
 @media (min-width: 1600px) {
   .mt_90 {
     margin-top: -190px !important;
+  }
+  .det_card {
+    bottom: 19%;
+    left: 9%;
   }
 }

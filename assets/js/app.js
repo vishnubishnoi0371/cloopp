@@ -2,7 +2,7 @@ const preloader = document.getElementById("preloader");
 setTimeout(() => {
   document.getElementById("preloder").classList.add("d-none");
   document.body.classList.remove("overflow_hidden");
-}, 2);
+}, 4000);
 let a = document.getElementById("nav");
 let flow = document.querySelector(".flow");
 let cross4 = document.querySelector(".cross-4");
